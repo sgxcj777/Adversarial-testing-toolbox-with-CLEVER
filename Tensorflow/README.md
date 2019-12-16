@@ -1,4 +1,4 @@
-# Evaluating Model's robustness to adversarial attacks using CLEVER metrics
+# Evaluating a Tensorflow Model's robustness to adversarial attacks using CLEVER metrics
 
 The files in this folder contains examples of how one will evaluate robustness of a Tensorflow model using CLEVER metrics.
 There are examples of evaluation under a white-box setting, as well as under black-box setting. 
