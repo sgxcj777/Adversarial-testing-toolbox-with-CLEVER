@@ -1,12 +1,10 @@
-# Making use of Adverserial Robustness Toolbox (ART) from IBM
+# Computing CLEVER score for model's robustness against adversarial attacks
 
-This is a library is to provide a toolbox for adversarial testing. It mainly focuses on using CLEVER score as a metric to evaluate a model's robustness.
+This package is to provide a toolbox for adversarial testing. It mainly focuses on using CLEVER score as a metric to evaluate a model's robustness.
 
-IBM's ART library is used to provide frameworks for popular Machine Learning Libraries, types of attacks, defences, metrics and verifications (including the use of CLEVER).
+We leverage on several existing toolboxes/packages/libraries done on Github to perform model testing and evaluation. the following libraries/packages are used:
 
-Documentation of ART: https://adversarial-robustness-toolbox.readthedocs.io
-
-Details on which Machine Learning Libraries and types of attacks, defences and metrics are documented in the IBM ART github.
+- IBM's ART library: used to provide frameworks for popular Machine Learning Libraries, types of attacks, defences, metrics and verifications (including the use of CLEVER). Documentation of ART: https://adversarial-robustness-toolbox.readthedocs.io
 
 
 ## Required packages
