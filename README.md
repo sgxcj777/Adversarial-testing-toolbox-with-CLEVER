@@ -44,10 +44,12 @@ ART provides unit tests that can be run with the following command:
 bash run_tests.sh
 ```
 
-### CLEVER metric in ART library
+## CLEVER metric in ART library
+
 Using the CLEVER metric function in ART library requires a few predetermined parameters that we need to set to sample points and estimate the CLEVER metric. In order to use the function, the model has to be wrapped in a classifier provided by ART library. Details on how to wrap the model for each model framework is explained in the example folders.
 
-### Computing of CLEVER score
+## Computing of CLEVER score
+
 ```metrics.clever_u``` is used to evaluate CLEVER score for untargetted attacks.
 ```metrics.clever_t``` is used to evaluate CLEVER score for targetted attacks.
 #### Usage
