@@ -6,6 +6,25 @@ We leverage on several existing toolboxes/packages/libraries done on Github to p
 
 - IBM's ART library: used to provide frameworks for popular Machine Learning Libraries, types of attacks, defences, metrics and verifications (including the use of CLEVER). Documentation of ART: https://adversarial-robustness-toolbox.readthedocs.io
 
+# CLEVER Theory
+
+CLEVER evaluates by providing an estimation of the lower bound of perturbations needed to create an adversarial sample. Most of the previous methods of finding lower bond of perturbations consists of sampling outputs from a large amount of adversarial attacks, and computing the minimum perturbations required to create an adversarial sample. However, this method does not cover all types of attacks, especially unforeseen attacks. Thus, CLEVER seeks to estimate the lower bound of perturbations needed to create an adversarial sample without the need to perform specific adversarial attacks (i.e. attack independent).
+
+- Estimating lower bound:
+ 
+Fc  - Fj (numerator) -> difference of the output of prediction between 2 classes (e.g. if predict class 1 = 0.2 and predict class 3 = 0.4, Fc  - Fj = 0.4-0.2 = 0.2)
+
+Lq (denominator) -> cross Lipschitz constant with Fc  - Fj
+
+- Cross Lipschitz constant:
+  
+
+Bp(X0 , R) -> ball of radius predetermined to sample values
+
+In essence, compute gradient for each class (partial differentiation), then compute the difference between the pair of classes and find the maximum difference in all the sampled values in the ball of radius.
+
+This is computationally expensive, thus, the CLEVER authors used Extreme Value theory to estimate this maximum value.
+
 
 ## Required packages
 
