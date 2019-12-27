@@ -19,7 +19,9 @@ Fc  - Fj (numerator) -> difference of the output of prediction between 2 classes
 Lq (denominator) -> cross Lipschitz constant with Fc  - Fj
 
 - Cross Lipschitz constant:
-  
+
+![hi](https://github.com/sgxcj777/Adversarial-testing-toolbox-with-CLEVER/blob/master/Images/Picture%202.png)
+![hi](https://github.com/sgxcj777/Adversarial-testing-toolbox-with-CLEVER/blob/master/Images/Picture%203.png)
 
 Bp(X0 , R) -> ball of radius predetermined to sample values
 
