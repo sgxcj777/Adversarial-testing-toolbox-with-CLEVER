@@ -11,7 +11,9 @@ We leverage on several existing toolboxes/packages/libraries done on Github to p
 CLEVER evaluates by providing an estimation of the lower bound of perturbations needed to create an adversarial sample. Most of the previous methods of finding lower bond of perturbations consists of sampling outputs from a large amount of adversarial attacks, and computing the minimum perturbations required to create an adversarial sample. However, this method does not cover all types of attacks, especially unforeseen attacks. Thus, CLEVER seeks to estimate the lower bound of perturbations needed to create an adversarial sample without the need to perform specific adversarial attacks (i.e. attack independent).
 
 - Estimating lower bound:
+
 ![hi](https://github.com/sgxcj777/Adversarial-testing-toolbox-with-CLEVER/blob/master/Images/Picture%201.png)
+
 Fc  - Fj (numerator) -> difference of the output of prediction between 2 classes (e.g. if predict class 1 = 0.2 and predict class 3 = 0.4, Fc  - Fj = 0.4-0.2 = 0.2)
 
 Lq (denominator) -> cross Lipschitz constant with Fc  - Fj
